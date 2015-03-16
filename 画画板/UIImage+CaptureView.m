@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 jinheng. All rights reserved.
 //
 
-#import "UIImage+captureView.h"
+#import "UIImage+CaptureView.h"
 
-@implementation UIImage (captureView)
+@implementation UIImage (CaptureView)
 
 +(UIImage *)captureImageWithView:(UIView *)view
 {

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "JHView.h"
-#import "UIImage+captureView.h"
+#import "UIImage+CaptureView.h"
 #import "MBProgressHUD+NJ.h"
 
 @interface ViewController ()

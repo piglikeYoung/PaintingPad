@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (captureView)
+@interface UIImage (CaptureView)
 
 + (UIImage *) captureImageWithView:(UIView *)view;
 
