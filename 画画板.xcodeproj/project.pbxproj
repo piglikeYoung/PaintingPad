@@ -14,6 +14,11 @@
 		7DD220111AB56B9C00733750 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD220101AB56B9C00733750 /* Images.xcassets */; };
 		7DD220141AB56B9C00733750 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DD220121AB56B9C00733750 /* LaunchScreen.xib */; };
 		7DD220201AB56B9C00733750 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD2201F1AB56B9C00733750 /* ___Tests.m */; };
+		7DD2202B1AB56CF300733750 /* UIImage+captureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD2202A1AB56CF300733750 /* UIImage+captureView.m */; };
+		7DD2202E1AB56DEE00733750 /* JHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD2202D1AB56DEE00733750 /* JHView.m */; };
+		7DD220351AB5746700733750 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD220311AB5746700733750 /* MBProgressHUD+NJ.m */; };
+		7DD220361AB5746700733750 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DD220321AB5746700733750 /* MBProgressHUD.bundle */; };
+		7DD220371AB5746700733750 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD220341AB5746700733750 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		7DD220191AB56B9C00733750 /* 画画板Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "画画板Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD2201E1AB56B9C00733750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DD2201F1AB56B9C00733750 /* ___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___Tests.m"; sourceTree = "<group>"; };
+		7DD220291AB56CF300733750 /* UIImage+captureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+captureView.h"; sourceTree = "<group>"; };
+		7DD2202A1AB56CF300733750 /* UIImage+captureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+captureView.m"; sourceTree = "<group>"; };
+		7DD2202C1AB56DEE00733750 /* JHView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHView.h; sourceTree = "<group>"; };
+		7DD2202D1AB56DEE00733750 /* JHView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHView.m; sourceTree = "<group>"; };
+		7DD220301AB5746700733750 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
+		7DD220311AB5746700733750 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
+		7DD220321AB5746700733750 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		7DD220331AB5746700733750 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		7DD220341AB5746700733750 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +95,16 @@
 		7DD220021AB56B9C00733750 /* 画画板 */ = {
 			isa = PBXGroup;
 			children = (
+				7DD2202F1AB5746700733750 /* MBProgressHUD */,
 				7DD220071AB56B9C00733750 /* AppDelegate.h */,
 				7DD220081AB56B9C00733750 /* AppDelegate.m */,
 				7DD2200A1AB56B9C00733750 /* ViewController.h */,
 				7DD2200B1AB56B9C00733750 /* ViewController.m */,
 				7DD2200D1AB56B9C00733750 /* Main.storyboard */,
+				7DD220291AB56CF300733750 /* UIImage+captureView.h */,
+				7DD2202A1AB56CF300733750 /* UIImage+captureView.m */,
+				7DD2202C1AB56DEE00733750 /* JHView.h */,
+				7DD2202D1AB56DEE00733750 /* JHView.m */,
 				7DD220101AB56B9C00733750 /* Images.xcassets */,
 				7DD220121AB56B9C00733750 /* LaunchScreen.xib */,
 				7DD220031AB56B9C00733750 /* Supporting Files */,
@@ -117,6 +136,18 @@
 				7DD2201E1AB56B9C00733750 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DD2202F1AB5746700733750 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7DD220301AB5746700733750 /* MBProgressHUD+NJ.h */,
+				7DD220311AB5746700733750 /* MBProgressHUD+NJ.m */,
+				7DD220321AB5746700733750 /* MBProgressHUD.bundle */,
+				7DD220331AB5746700733750 /* MBProgressHUD.h */,
+				7DD220341AB5746700733750 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DD2200F1AB56B9C00733750 /* Main.storyboard in Resources */,
+				7DD220361AB5746700733750 /* MBProgressHUD.bundle in Resources */,
 				7DD220141AB56B9C00733750 /* LaunchScreen.xib in Resources */,
 				7DD220111AB56B9C00733750 /* Images.xcassets in Resources */,
 			);
@@ -220,8 +252,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DD2200C1AB56B9C00733750 /* ViewController.m in Sources */,
+				7DD220351AB5746700733750 /* MBProgressHUD+NJ.m in Sources */,
 				7DD220091AB56B9C00733750 /* AppDelegate.m in Sources */,
 				7DD220061AB56B9C00733750 /* main.m in Sources */,
+				7DD2202B1AB56CF300733750 /* UIImage+captureView.m in Sources */,
+				7DD2202E1AB56DEE00733750 /* JHView.m in Sources */,
+				7DD220371AB5746700733750 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

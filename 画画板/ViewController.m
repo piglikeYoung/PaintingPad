@@ -7,21 +7,57 @@
 //
 
 #import "ViewController.h"
+#import "JHView.h"
+#import "UIImage+captureView.h"
+#import "MBProgressHUD+NJ.h"
 
 @interface ViewController ()
+/**
+    清屏
+ 
+ */
+- (IBAction)clearScreen;
+/**
+ 
+    回退
+ */
+- (IBAction)backClick;
+/**
+    保存
+ */
+- (IBAction)saveClick;
+
+@property (weak, nonatomic) IBOutlet JHView *customView;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+- (IBAction)clearScreen {
+    
+    [self.customView clearView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)backClick {
+    
+    [self.customView backView];
 }
 
+- (IBAction)saveClick {
+    
+    UIImage *newImage = [UIImage captureImageWithView:self.customView];
+    // 保存到相册
+    UIImageWriteToSavedPhotosAlbum(newImage, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+}
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
+{
+    if (error) {
+        [MBProgressHUD showError:@"保存失败"];
+    }else
+    {
+        [MBProgressHUD showSuccess:@"保存成功"];
+    }
+}
 @end
